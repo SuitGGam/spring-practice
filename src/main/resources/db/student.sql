@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS student;
+CREATE DATABASE student;
+USE student;
+
+CREATE TABLE student (
+	student_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL COMMENT '학번',
+    student_name VARCHAR(20) NOT NULL COMMENT '이름',
+    age INT NOT NULL COMMENT '나이',
+    major VARCHAR(20) NOT NULL COMMENT '전공'
+);
